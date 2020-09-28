@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
+
 {% assign images = "" | split: "" %}
-{% for project in site.projects %}
-  {% for image in project.images %}
-    {% assign images = images | push: image %}
-  {% endfor %}
+{% for image in page.images %}
+  {% assign images = images | push: image %}
 {% endfor %}
 
 <div class="header">
@@ -32,7 +31,7 @@ layout: default
   </div>
 </div>
 
-<div class="slider-wrapper page-item slider-element page-item-active">
+<div class="slider-wrapper">
   <div class="slider">
     {% for image in images %}
       <div class="slider-item">
@@ -40,6 +39,21 @@ layout: default
           <div class="slider-overlay"></div>
           <div class="slider-img" style="background-image: url({{image.path}})"></div>
         </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="next"></div>
+  <div class="prev"></div>
+</div>
+
+<div class="index-content">
+  <div class="previews">
+    {% for image in images %}
+      <div class="preview-item">
+        <a href="#{{ forloop.index }}" class="preview-link">
+          <div class="preview-overlay"></div>
+          <div class="preview-img" style="background-image: url({{image.path}})"></div>
+        </a>
       </div>
     {% endfor %}
   </div>

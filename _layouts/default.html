@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
-    <meta name="description" content="We are Russian graphic design studio based in Moscow. The studio was founded in 2014 by Dima Gusev and Misha Filatov. Our work is mainly focused on projects in the cultural field (printed matter, identity, web). Feel free to contact us.">
-    <meta name="og:description" content="We are Russian graphic design studio based in Moscow. The studio was founded in 2014 by Dima Gusev and Misha Filatov. Our work is mainly focused on projects in the cultural field (printed matter, identity, web). Feel free to contact us.">
-    <meta property="og:title" content="Dima Gusev and Misha Filatov">
-    <meta property="og:type" content="website">
-
-    <link rel="stylesheet" media="all" href="/assets/sitewide.css">
-    <script src="/assets/sitewide.js"></script>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-66e34c89dc549b8aa6b08fc660b5f93397b15d2201dd1709fbec9e2998b61b78.ico">
-
-    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Dima Gusev and Misha Filatov</title>
+    <meta content="We are Russian graphic design studio based in Moscow. The studio was founded in 2014 by Dima Gusev and Misha Filatov. Our work is mainly focused on projects in the cultural field (printed matter, identity, web). Feel free to contact us." name="description" />
+    <meta content="We are Russian graphic design studio based in Moscow. The studio was founded in 2014 by Dima Gusev and Misha Filatov. Our work is mainly focused on projects in the cultural field (printed matter, identity, web). Feel free to contact us." name="og:description" />
+    <meta content="Dima Gusev and Misha Filatov" property="og:title" />
+    <meta content="website" property="og:type" />
+    <link rel="stylesheet" media="all" href="/assets/css/sitewide.css" />
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/jquery.slick.js"></script>
+    <script src="/assets/js/sitewide.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
   </head>
   <body>
-    {{ content }}
+    <div class="container">
+      <div class="content">
+        {{ content }}
+
+        <div class="about-popup-wrapper page-item">
+          <div class="about-popup-text">We&nbsp;are Russian graphic design studio based in&nbsp;Moscow. The studio was founded in&nbsp;2014 by&nbsp;Dima Gusev and Misha Filatov. Our work is&nbsp;mainly focused on&nbsp;projects in&nbsp;the cultural field (printed matter, identity, web). Feel free to&nbsp;contact us.</div>
+          <div class="about-popup-link">Back to projects</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

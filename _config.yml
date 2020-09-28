@@ -1,3 +1,4 @@
-name: Dima Gusev Misha Filatov
 collections:
-  - projects
+  projects:
+    output: true
+    layout: project

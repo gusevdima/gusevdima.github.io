@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign images = "" | split: "" %}
 {% for project in site.projects %}
   {% for image in project.images %}
@@ -20,27 +21,17 @@ layout: default
       <a class="nowrap" href="tel:+79032202621">+7 903 220 2621</a>
     </div>
   </div>
-  <div class="captions-wrapper">
-    <div class="captions">
+
+  <div class="index-content page-item page-item-active">
+    <div class="previews">
       {% for image in images %}
-        <div class="caption">
-          <div class="number">{{ forloop.index }}/{{ forloop.length }}</div>
-          <div class="caption">{{ image.caption }}</div>
+        <div class="preview-item">
+          <a class="preview-link" href="/#{{forloop.index}}">
+            <div class="preview-overlay"></div>
+            <div class="preview-img" style="background-image: url({{image.path}})"></div>
+          </a>
         </div>
       {% endfor %}
     </div>
-  </div>
-</div>
-
-<div class="slider-wrapper page-item slider-element page-item-active">
-  <div class="slider">
-    {% for image in images %}
-      <div class="slider-item">
-        <div class="slider-imgwrapper">
-          <div class="slider-overlay"></div>
-          <div class="slider-img" style="background-image: url({{image.path}})"></div>
-        </div>
-      </div>
-    {% endfor %}
   </div>
 </div>
