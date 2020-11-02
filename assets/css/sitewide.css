@@ -164,6 +164,7 @@ a, a:link, a:visited {
 
 .header {
   position: relative;
+  display: flex;
 }
 
 .logo {
@@ -243,6 +244,7 @@ a, a:link, a:visited {
 .previews {
   margin: 0 -10px;
   padding-bottom: 28px;
+  font-size: 0;
 }
 
 .preview-item {
@@ -349,6 +351,10 @@ a, a:link, a:visited {
     width: 100%;
     max-width: 100%;
     padding-right: 10px;
+  }
+
+  .header {
+    flex-direction: column;
   }
 
   .index-link {
