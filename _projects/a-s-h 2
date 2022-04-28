@@ -1,0 +1,10 @@
+---
+layout: project
+title: Example title
+description: Example description
+images:
+  - caption: Field of Action catalogue 2016
+    path: images/a-s-h.jpg
+  - caption: Field of Action catalogue 2016
+    path: images/a-s-h.jpg  
+---
