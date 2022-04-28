@@ -3,8 +3,8 @@ layout: project
 title: Example title
 description: Example description
 images:
-  - caption: Field of Action catalogue 2016
-    path: images/a-s-h.jpg
-  - caption: Field of Action catalogue 2016
+  - caption: Art-Space-Hopping 2 poster 2020
+    path: images/a-s-h-poster-h.jpg
+  - caption: Art-Space-Hopping 2 postcard 2020
     path: images/a-s-h.jpg  
 ---
